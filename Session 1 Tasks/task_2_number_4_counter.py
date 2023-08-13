@@ -1,3 +1,5 @@
+#Write a Python program to count the number 4 in a given list.
+
 def count_number(lst, num):
     return lst.count(num)
 
