@@ -1,3 +1,5 @@
+#Write a python code that checks if a letter is vowel
+
 letter = input("Please enter a letter to check:")
 vowels = ['a','e','i','o','u','A','E','I','O','U']
 
