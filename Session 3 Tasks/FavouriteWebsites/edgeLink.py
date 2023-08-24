@@ -1,11 +1,25 @@
-import webbrowser
+# --/ We're using WSL so the webbrowser module wouldn't work to launch the default browser on the host system /--
+#import webbrowser
 
-facebook_link = "https://www.facebook.com/"
-#youtube_link = "https://www.youtube.com/"
-#instagram_link = "https://www.instagram.com/"
-#twitter_link = "https://www.twitter.com/"
+#import webbrowser
+
+# Instead, we'll use subprocess to utilize wslview
+
+import subprocess
+
+websites = {
+    "facebook" : "https://www.facebook.com/",
+    "youtube" : "https://www.youtube.com/",
+    "instagram" : "https://www.instagram.com/",
+    "twitter" : "https://www.twitter.com/"
+}
+
+# WSL
 
 def edge(link):
+    subprocess.run(["wslview", link])
     
-    edge_path = 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe %s'
-    webbrowser.get(edge_path).open(link)
+
+# Non-WSL    
+#def edge(link):
+#    webbrowser.get("C:/Program Files/Google/Chrome/Application/chrome.exe %s").open(link)

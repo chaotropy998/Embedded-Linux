@@ -1,19 +1,29 @@
 import edgeLink
+import validators
 
-edgeLink.edge(edgeLink.facebook_link)
 
 while True:
-    pass
-
-'''print("Choose your favourite website or type in the link you want:")
-website = input('(1) Facebook\n(2) Instagram\n(3) Twitter\n(4) Youtube\n')
-
-
-def websiteHandler(webSite):
-    switch={
-        '1': edgeLink.edge(edgeLink.facebook_link),
-        '2': edgeLink.edge(edgeLink.instagram_link),
-        '3': edgeLink.edge(edgeLink.twitter_link),
-        '4': edgeLink.edge(edgeLink.youtube_link)
-    }
-    return switch.get(websiteHandler, 'Choose a valid option')'''
+    
+    print('(1) Youtube\n(2) Facebook\n(3) Twitter\n(4) Instagram')
+    link = input("Choose the website you'd like to open or type in the link directly: ")
+    if link == '1':
+        edgeLink.edge(edgeLink.websites['youtube'])
+    elif link == '2':
+        edgeLink.edge(edgeLink.websites['facebook'])
+    elif link == '3':
+        edgeLink.edge(edgeLink.websites['twitter'])
+    elif link == '4':
+        edgeLink.edge(edgeLink.websites['instagram'])
+        
+    else:
+        if(validators.url(link)):
+            edgeLink.edge(link)
+        else:
+            print("Invalid URL.")
+    
+    print('Would you like to open another website?\nY/N?\t')
+    checker = input()
+    if(checker == 'Y'):
+        True
+    else:
+        break
