@@ -23,7 +23,5 @@ while True:
     
     print('Would you like to open another website?\nY/N?\t')
     checker = input()
-    if(checker == 'Y'):
-        continue
-    else:
+    if(checker.lower() != 'Y'):
         break
