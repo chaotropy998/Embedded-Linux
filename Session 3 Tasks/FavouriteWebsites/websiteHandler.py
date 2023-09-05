@@ -1,7 +1,6 @@
 import edgeLink
 import validators
 
-
 while True:
     
     print('(1) Youtube\n(2) Facebook\n(3) Twitter\n(4) Instagram')
@@ -23,5 +22,5 @@ while True:
     
     print('Would you like to open another website?\nY/N?\t')
     checker = input()
-    if(checker.lower() != 'Y'):
+    if(checker.lower() != 'y'):
         break
