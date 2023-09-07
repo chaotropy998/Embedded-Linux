@@ -1,0 +1,8 @@
+file
+file
+keyboard.add_hotkey("ctrl+l", export_clipboard_data)
+
+keyboard.add_hotkey("ctrl+alt+j", export_clipboard_data)
+
+keyboard.add_hotkey("ctrl+c", export_clipboard_data)
+

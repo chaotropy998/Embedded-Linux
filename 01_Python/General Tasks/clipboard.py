@@ -17,7 +17,7 @@ def export_clipboard_data():
         file.write(clipboard_data + "\n")
     
 # Register the hotkey
-keyboard.add_hotkey("alt+shift+s", export_clipboard_data)
+keyboard.add_hotkey("ctrl+c", export_clipboard_data)
 
 # Keep the script running
 keyboard.wait()
