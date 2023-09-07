@@ -1,0 +1,7 @@
+Hello, this is a test file
+In here
+We will 
+count the number of lines
+that are written on this file
+using python script
+linesCounter.py
