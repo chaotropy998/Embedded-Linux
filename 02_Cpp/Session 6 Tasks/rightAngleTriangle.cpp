@@ -4,7 +4,7 @@ int main() {
 
     int base;
 
-    std::cout << "Enter the triangle's base lengh" << std::endl;
+    std::cout << "Enter the triangle's base length:" << std::endl;
     std::cin >> base;
 
     for(int i = 1; i <= base; i++) {
