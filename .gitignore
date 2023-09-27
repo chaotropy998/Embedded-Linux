@@ -6,3 +6,8 @@ General Tasks/notes.txt
 .vscode/settings.json
 02_Cpp/Session 6 Tasks/maxNumber
 02_Cpp/Session 6 Tasks/rightAngleTriangle
+02_Cpp/Session 6 Tasks/build/Debug/outDebug
+02_Cpp/Session 6 Tasks/build/Debug/maxNumber.o
+02_Cpp/Session 6 Tasks/build/Debug/intConversion.o
+.vscode/launch.json
+.vscode/c_cpp_properties.json
