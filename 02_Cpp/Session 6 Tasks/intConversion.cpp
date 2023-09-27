@@ -10,8 +10,8 @@ void decimalToBinary(int decimalNumber){
         k >>= 1; 
     }
 
-    std::bitset<64> binaryRepresentation(decimalNumber);
-    std:: cout << "Binary number for " << decimalNumber << " is: " << binaryRepresentation.to_string().substr(64 - numBits) << std::endl;
+    std::bitset<64> binaryValue(decimalNumber);
+    std:: cout << "Binary number for " << decimalNumber << " is: " << binaryValue.to_string().substr(64 - numBits) << std::endl;
 }
 
 void binaryToDecimal(std::string binaryNumber){
